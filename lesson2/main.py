@@ -7,6 +7,6 @@ num =  5555
 
 print(len(string), type(string))
 i = 0
-while i < len(string):
+while i < len(string): #цыкл
     print(string[i])
     i += 1
