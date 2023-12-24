@@ -21,8 +21,9 @@ def replace(row, tochange, replacement):
     answer = ""
     i = 0
     while i < len(row):
-        if slice(row, i, i + len(tochange) - 1) == tochange:
-            answer = replacement
+        if row[i:i + len(tochange)] == tochange:
+            answer += replacement
+            i += len(tochange) - 1
         else:
             answer += row[i]
         i += 1
